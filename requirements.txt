@@ -1,0 +1,21 @@
+# Core app
+streamlit
+python-dotenv
+
+# Data
+xarray
+netCDF4
+pandas
+numpy
+
+# Visualisation
+plotly
+
+# LLM agent
+langchain
+langchain-groq
+langchain-experimental
+
+# Deep learning
+tensorflow
+scikit-learn

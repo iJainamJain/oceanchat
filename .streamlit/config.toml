@@ -1,0 +1,27 @@
+# Visual theme. Native widgets (sliders, inputs, tables, popovers) take their colours
+# from here, so theme.py only has to handle layout and the custom components.
+
+[theme]
+base = "light"
+primaryColor = "#FF7759"
+backgroundColor = "#F1EFEA"
+secondaryBackgroundColor = "#F6F4F0"
+textColor = "#1C1B19"
+linkColor = "#0E7C86"
+font = "Inter:https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap, sans-serif"
+codeFont = "IBM Plex Mono:https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap, monospace"
+headingFontWeights = 600
+baseRadius = "10px"
+buttonRadius = "8px"
+borderColor = "#E5E2DC"
+dataframeBorderColor = "#ECE9E3"
+showWidgetBorder = true
+showSidebarBorder = false
+chartCategoricalColors = ["#0E7C86", "#FF7759", "#D9A441", "#6C63B5", "#3FA37A", "#C2577E"]
+
+[theme.sidebar]
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F6F4F0"
+
+[client]
+toolbarMode = "minimal"

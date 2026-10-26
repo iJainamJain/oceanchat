@@ -1,0 +1,38 @@
+# Deny by default, then allow only what belongs in the repository. The working
+# directory also holds large raw downloads and manuscript drafts; this keeps them out
+# rather than relying on remembering to exclude each one.
+/*
+
+!/.gitignore
+!/.env.example
+!/README.md
+!/requirements.txt
+
+!/app.py
+!/store.py
+!/theme.py
+!/train_model.py
+!/build_dataset.py
+!/build_dataset_gdac.py
+!/run_dl.py
+!/audit.py
+!/audit_results.json
+
+!/.streamlit/
+!/dl/
+!/models/
+!/data/
+!/docs/
+
+# Never, anywhere.
+.env
+__pycache__/
+*.pyc
+
+# Only the demo dataset ships; everything else under data/ is a large download.
+/data/*
+!/data/argo_indian_ocean.nc
+
+# Multi-seed training output, not needed to run anything here.
+/models/argo_indian_ocean_2yr/
+/models/argo_indian_ocean_2yr_temporal/
